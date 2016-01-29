@@ -1,33 +1,18 @@
 package com.example.user.myhud;
 
-import android.app.Activity;
-import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class MainActivity extends Activity {
-
-    private ListView list01;
-    private SensorManager sensorManager;
+public class MainActivity extends AppCompatActivity {
+    private TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        list01 = (ListView)findViewById(R.id.listView01);
-        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        List<Sensor> sensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
-        List<String> listSensorType = new ArrayList<String>();
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listSensorType);
-        list01.setAdapter(adapter);
-        for (Sensor sensor : sensors) {
-            listSensorType.add(sensor.getName());
-        }
+        tv = (TextView)findViewById(R.id.textClock);
+        Typeface mfont = Typeface.createFromAsset(getAssets(),"fonts/Comfortaa-Regular.ttf");
+        tv.setTypeface(mfont);
     }
 }

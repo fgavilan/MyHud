@@ -7,21 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.myhud.MainActivity">
+    tools:context="com.example.user.myhud.SensorlistActivity">
 
-    <TextClock
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:id="@+id/listView01"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="42sp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
+        android:layout_alignParentStart="true"
+        android:fastScrollAlwaysVisible="true" />
 </RelativeLayout>
