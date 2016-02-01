@@ -1,18 +1,28 @@
 package com.example.user.myhud;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity{
     private TextView tv;
+    private ImageButton snButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sensors);
         tv = (TextView)findViewById(R.id.textClock);
-        Typeface mfont = Typeface.createFromAsset(getAssets(),"fonts/Comfortaa-Regular.ttf");
+        Typeface mfont = Typeface.createFromAsset(getAssets(),"Comfortaa-Regular.ttf");
         tv.setTypeface(mfont);
     }
+    public void sensorAbre(View view) {
+        //Intent i = new Intent(this, SensorlistActivity.class );
+        //startActivity(i);
+    }
+
 }
