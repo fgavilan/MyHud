@@ -15,14 +15,14 @@ public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sensors);
+        setContentView(R.layout.activity_main);
         tv = (TextView)findViewById(R.id.textClock);
         Typeface mfont = Typeface.createFromAsset(getAssets(),"Comfortaa-Regular.ttf");
         tv.setTypeface(mfont);
     }
     public void sensorAbre(View view) {
-        //Intent i = new Intent(this, SensorlistActivity.class );
-        //startActivity(i);
+        Intent i = new Intent(this, SensorlistActivity.class );
+        startActivity(i);
     }
 
 }

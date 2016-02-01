@@ -24,7 +24,6 @@
         android:src="@mipmap/lights74"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:baselineAlignBottom="true"
-        android:onClick="sensorAbre" />
+        android:baselineAlignBottom="true" />
 
 </RelativeLayout>
