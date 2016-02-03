@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyHud</string>
+    <string name="ListHardware">Show a list of physical sensors</string>
 </resources>

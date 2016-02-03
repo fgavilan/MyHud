@@ -3,7 +3,6 @@ package com.example.user.myhud;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,7 +20,7 @@ public class MainActivity extends Activity{
         tv.setTypeface(mfont);
     }
     public void sensorAbre(View view) {
-        Intent i = new Intent(this, SensorlistActivity.class );
+        Intent i = new Intent(this, HardwareActivity.class );
         startActivity(i);
     }
 
