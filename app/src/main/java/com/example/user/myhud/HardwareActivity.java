@@ -1,6 +1,7 @@
 package com.example.user.myhud;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +29,9 @@ public class HardwareActivity extends AppCompatActivity {
 
         for (Sensor sensor : sensors) {
             listSensorType.add(sensor.getName());
+
         }
+
         list01.setAdapter(adapter);
     }
 }

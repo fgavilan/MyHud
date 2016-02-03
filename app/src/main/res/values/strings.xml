@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">MyHud</string>
-    <string name="ListHardware">Show a list of physical sensors</string>
+    <string name="ListHardware">Shows handy information for vehicles that doesnt have instruments</string>
 </resources>
