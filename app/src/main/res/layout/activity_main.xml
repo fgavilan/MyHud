@@ -11,14 +11,22 @@
     android:background="#FF000000">
 
 
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <TextClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textClock"
-        android:textSize="42sp"
+        android:textSize="48sp"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#ffffff" />
+        android:layout_marginTop="51dp" />
 
     <ImageButton
         android:layout_width="36dp"
